@@ -56,7 +56,7 @@ class App extends React.Component {
         <div className="App" >
         {
           this.state.activePhoto ? (
-            <div> 
+            <div class="nft-container"> 
               <img className='nft-image' src={this.state.activePhoto.image_original_url}/>
               <div className='qr-code'> 
                 <QRCode value={String(this.state.activePhoto.permalink)}/>
