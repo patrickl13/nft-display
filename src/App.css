@@ -1,17 +1,16 @@
 .App {
+  text-align: center;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
 }
 
-.nft-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-
 .nft-image {
-  width: auto;
-  height: 520px;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -21,6 +20,6 @@
   border-radius: 10px;
   padding: 10px;
   width: 260px;
-  height: 260px;
+  margin: 20px auto;
 }
 

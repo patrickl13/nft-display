@@ -3,7 +3,7 @@ import React from 'react';
 import QRCode from "react-qr-code";
 
 const URL = 'https://api.opensea.io/api/v1/assets?owner=0x8af8957e94e4bda9bbf1a9beb2bd28de1c90a950&order_direction=desc&offset=0&limit=50';
-const INTERVAL = 5000;
+const INTERVAL = 10000;
 
 class App extends React.Component {
 
@@ -56,7 +56,7 @@ class App extends React.Component {
         <div className="App" >
         {
           this.state.activePhoto ? (
-            <div class="nft-container"> 
+            <div> 
               <img className='nft-image' src={this.state.activePhoto.image_original_url}/>
               <div className='qr-code'> 
                 <QRCode value={String(this.state.activePhoto.permalink)}/>
